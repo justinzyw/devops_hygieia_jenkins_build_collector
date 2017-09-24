@@ -1,5 +1,7 @@
 FROM pravsingh/hygieia-jenkins-build-collector
 
+ENV MONGO_PORT tcp://devops-hygieiadb:27017
+
 ENV HYGIEIA_API_ENV_SPRING_DATA_MONGODB_DATABASE hygieia
 
 ENV MONGODB_HOST devops-hygieiadb
